@@ -4,7 +4,6 @@ import {
   ICGithub,
   ICInstagram,
   ICLinkedin,
-  LogoAtna,
 } from "../../../assets";
 import "./footer.scss";
 
@@ -21,9 +20,7 @@ const Footer = () => {
   return (
     <div>
       <div className="footer">
-        <div>
-          <img className="logo" />
-        </div>
+       
         <div className="social-wrapper">
           <Icon img={ICFacebook} alt="facebook" />
           <Icon img={ICInstagram} alt="instagram" />
