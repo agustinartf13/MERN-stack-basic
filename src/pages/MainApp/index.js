@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Footer, Header } from "../../components";
 import CreateBlog from "../CreateBlog";
 import DetailBlog from "../DetailBlog";
+
 import Home from "../Home";
 import './mainApp.scss'
 
@@ -17,7 +18,7 @@ const MainApp = () => {
                             <CreateBlog />
                         </Route>
                         <Route path="/detail-blog">
-                            <DetailBlog />
+                           <DetailBlog/>
                         </Route>
                         <Route path="/home">
                             <Home />

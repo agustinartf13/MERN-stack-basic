@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Login, MainApp, Register } from '../../pages'
 
 const Routes = () => {
@@ -7,15 +7,15 @@ const Routes = () => {
 
         <Router>
             <Switch>
-                <Router path="/login">
+                <Route path="/login">
                     <Login></Login>
-                </Router>
-                <Router path="/register">
+                </Route>
+                <Route path="/register">
                     <Register></Register>
-                </Router>
-                <Router path="/">
+                </Route>
+                <Route path="/home">
                     <MainApp></MainApp>
-                </Router>
+                </Route>
             </Switch>
         </Router>
     )
